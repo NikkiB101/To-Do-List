@@ -40,8 +40,44 @@ form {
 
 }
 
-ul {
-    margin: 5%;
-    color: black;
+ul{
     list-style-type: none;
+    width: 100%;
 }
+
+.item-div {
+    margin: 2%;
+    color: black;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+li {
+    flex: 1;   
+
+}
+
+.delete-button {
+background-color: red;
+width: 40px;
+height: 40px;
+border: red;
+border-radius: 10px;
+color: white;
+margin: 3px;
+}
+
+.complete-btn {
+    background-color: greenyellow;
+    width: 40px;
+    height: 40px;
+    border: greenyellow;
+    border-radius: 10px;
+    color: white;
+    margin: 3px;
+    }
+    
