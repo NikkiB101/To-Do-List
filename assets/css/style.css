@@ -66,7 +66,7 @@ li {
     flex: 1;  
 }
 
-.delete-button {
+.deletebtn {
 background-color: red;
 width: 40px;
 height: 40px;
@@ -78,13 +78,18 @@ cursor: pointer;
 }
 
 .complete-btn {
-    background-color: greenyellow;
+    background-color: rgb(122, 184, 29);
     width: 40px;
     height: 40px;
-    border: greenyellow;
+    border: rgb(122, 184, 29);
     border-radius: 10px;
     color: white;
     margin: 3px;
     cursor: pointer;
     }
-    
+
+    /** Remove click function from Icon **/
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}

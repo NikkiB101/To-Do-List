@@ -9,7 +9,7 @@ let toDoList = document.querySelector(".to-do-list");
 //Event Listeners
 
 addToDoItem.addEventListener("click", addToDo)
-toDoList.addEventListener("click", deleteTodo);
+toDoList.addEventListener("click", deleteitem);
 
 
 //Functions
@@ -46,8 +46,16 @@ function addToDo(event) {
 
     //Delete Task
 
-      let deleteButton = document.createElement("button");
-      deleteButton.classList.add("delete-button");
-      deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
-      newItemDiv.appendChild(deleteButton);
+    let deleteButton = document.createElement("button");
+    deleteButton.classList.add("deletebtn");
+    deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+    newItemDiv.appendChild(deleteButton);
+}
+
+function deleteitem(e) {
+    let item = e.target;
+    if (item.classList[0] === "deletebtn") {
+        let todo = item.parentElement;
+        todo.remove();
+    }
 }
