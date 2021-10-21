@@ -33,4 +33,8 @@ function addToDo(event) {
 
     toDoList.appendChild(newItemDiv);
 
+    //Remove input value after adding to list
+
+    toDoInput.value="";
+
 };
