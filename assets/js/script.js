@@ -4,21 +4,27 @@ let enterToDoItem = document.getElementById("add-item");
 let addToDoItem = document.getElementById("add-button");
 let toDoList = document.getElementsByTagName("ul");
 
+
+//Event Listeners
+
+addToDoItem.addEventListener("click", addToDo)
+
+
 //Functions
 
-//Create Div for item on to do list.
+function addToDo(event) {
 
-function addToDo (event) {
+    //Create Div for item on to do list.
+
     let newItemDiv = document.createElement("div");
     newItemDiv.classList.add("item-div");
 
-//Create List item 
+    //Create List item 
 
     let newToDo = document.createElement("li");
     newToDo.classList.add("list-item");
-    newToDo.innerText = form-text.value;
+    newToDo.innerText = form - text.value;
     newItemDiv.appendChild(newToDo);
 
     event.preventDefault();
-}
-
+};
