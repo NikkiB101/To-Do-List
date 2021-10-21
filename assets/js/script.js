@@ -9,6 +9,7 @@ let toDoList = document.querySelector(".to-do-list");
 //Event Listeners
 
 addToDoItem.addEventListener("click", addToDo)
+toDoList.addEventListener("click", deleteTodo);
 
 
 //Functions
@@ -35,7 +36,7 @@ function addToDo(event) {
 
     //Remove input value after adding to list
 
-    toDoInput.value="";
+    toDoInput.value = "";
 
     //Delete Task
 
@@ -44,6 +45,8 @@ function addToDo(event) {
     deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
     newItemDiv.appendChild(deleteButton);
 
-
-
-};
+// Mark as Complete Button
+let completedButton = document.createElement("button");
+completedButton.innerHTML = `<i class="fas fa-check"></i>`;
+completedButton.classList.add("complete-btn");
+newItemDiv.appendChild(completedButton);
