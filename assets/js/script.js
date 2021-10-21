@@ -9,7 +9,8 @@ let toDoList = document.querySelector(".to-do-list");
 //Event Listeners
 
 addToDoItem.addEventListener("click", addToDo)
-toDoList.addEventListener("click", deleteitem);
+toDoList.addEventListener("click", deleteItem);
+toDoList.addEventListener("click", checkItem);
 
 
 //Functions
@@ -48,14 +49,22 @@ function addToDo(event) {
 
     let deleteButton = document.createElement("button");
     deleteButton.classList.add("deletebtn");
-    deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+    deleteButton.innerHTML = `<i class="fas fa-trash"></i>`;
     newItemDiv.appendChild(deleteButton);
 }
 
-function deleteitem(e) {
+function deleteItem(e) {
     let item = e.target;
     if (item.classList[0] === "deletebtn") {
         let todo = item.parentElement;
         todo.remove();
     }
+}
+
+function checkItem(i) {
+    let item = i.target;
+    if (item.classList[0] === "complete-btn") {
+        let todo = item.parentElement;
+        todo.classList.toggle("completed")
+        }
 }
