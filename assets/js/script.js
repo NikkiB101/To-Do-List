@@ -37,4 +37,13 @@ function addToDo(event) {
 
     toDoInput.value="";
 
+    //Delete Task
+
+    let deleteButton = document.createElement("button");
+    deleteButton.classList.add("delete-button");
+    deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+    newItemDiv.appendChild(deleteButton);
+
+
+
 };
