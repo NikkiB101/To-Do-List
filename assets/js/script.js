@@ -38,16 +38,16 @@ function addToDo(event) {
 
     toDoInput.value = "";
 
-    //Delete Task
-
-    let deleteButton = document.createElement("button");
-    deleteButton.classList.add("delete-button");
-    deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
-    newItemDiv.appendChild(deleteButton);
-
     // Mark as Complete Button
     let completedButton = document.createElement("button");
     completedButton.innerHTML = `<i class="fas fa-check"></i>`;
     completedButton.classList.add("complete-btn");
     newItemDiv.appendChild(completedButton)
+
+    //Delete Task
+
+      let deleteButton = document.createElement("button");
+      deleteButton.classList.add("delete-button");
+      deleteButton.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+      newItemDiv.appendChild(deleteButton);
 }
