@@ -1,108 +1,69 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# To Do List
+To Do List is a site that hopes to increase productivity among its users. The site will be targeted towards those desks cluttered with many to do lists who would benefit from combining their lists to one location and become more organised. To Do Lists is a fully responsive JavaScript to do list that allows users to add tasks, delete tasks and mark them as complete. 
+<br>
 
-Welcome NikkiB101,
+## Features
+### <li> To Do List Logo and Heading </li>
+The logo and heading is feautured at the top of the page so the viewer knows the purpose of the site instantly. 
+<br>
+<br>
+<img src = "assets/images/To Do List Logo.PNG" >
+<br>
+<br>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### <li>To Do List Enter Task Area </li>
+The enter task area will allow the user to add a task to their to do list. The user will be prompted with the text "Enter your first task here..." so the user will know how to add an item to their to do list.
+<br>
+<br>
+<img src = "assets/images/Add Task.PNG" >
+<br>
+<br>
 
-## Gitpod Reminders
+### <li> The To Do List Area </li>
+The To Do List area will list the tasks added by the user. There will be button to mark the task as complete and a delete button. When a user marks a task as complete the task will then have a line through it. This is to show the user how much they have achieved while using To Do List.
+<br>
+<br>
+<img src = "assets/images/To do List.PNG" >
+<br>
+<br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### <li> Features to be Added</li>
+Offer the user the ability to schedule tasks.
+<br>
+Offer the user the ability to group certain tasks.
+<br>
+Offer the user the ability to close browser and the tasks are stored for future use.
+<br>
+<br>
 
-`python3 -m http.server`
+## Testing
+- HTML
+    - No errors were returned when passing through the official [W3C validator])
+    <br>
+    <br>
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator]
+    <br>
+    <br>
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+    - There are 3 functions in this file.
+    - Function with the largest signature take 1 arguments, while the median is 1.
+    - Largest function has 17 statements in it, while the median is 4.
+    - The most complex function has a cyclomatic complexity value of 2 while the median is 2.
+<br>
+<br>
+<br>
+    ## Deployment
 
-A blue button should appear to click: _Make Public_,
+- The site was deployed to GitHub pages. The live link can be found here - https://nikkib101.github.io/To-Do-List/
 
-Another blue button should appear to click: _Open Browser_.
+## Credits 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Code was not copied however I did take inspiration from https://developedbyed.com/. My code is different and has different functionality but for some of the logic, I took guidance from his course. 
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Content
+- [W3 Schools](https://www.w3schools.com/icons/fontawesome_icons_intro.asp) for Font Awesome Icons
+- [Google Fonts](https://fonts.google.com/) for PT Sans Font

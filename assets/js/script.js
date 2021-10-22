@@ -45,7 +45,7 @@ function addToDo(event) {
     completedButton.classList.add("complete-btn");
     newItemDiv.appendChild(completedButton)
 
-    //Delete Task
+    //Delete Task Button
 
     let deleteButton = document.createElement("button");
     deleteButton.classList.add("deletebtn");
@@ -53,6 +53,7 @@ function addToDo(event) {
     newItemDiv.appendChild(deleteButton);
 }
 
+//Function to Delete a Task
 function deleteItem(e) {
     let item = e.target;
     if (item.classList[0] === "deletebtn") {
@@ -61,10 +62,11 @@ function deleteItem(e) {
     }
 }
 
+//Function to MArk an Item as Complete
 function checkItem(i) {
     let item = i.target;
     if (item.classList[0] === "complete-btn") {
         let todo = item.parentElement;
         todo.classList.toggle("completed")
-        }
+    }
 }

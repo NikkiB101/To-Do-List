@@ -11,11 +11,28 @@ body {
     min-height: 100vh;
 }
 
+/** Header **/
+
 header {
     font-size: 2rem;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header,
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/** Paragraph, Text Input Box & Button **/
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
 form {
     min-height: 20vh;
     display: flex;
@@ -23,30 +40,38 @@ form {
     align-items: center;
 }
 
-
-#add-button{
-    width: 50px;
-    height: 50px;
-}
-
 .toDoInput {
     height: 50px;
     width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+
 }
+
+#add-button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+
+/** To Do List **/
 
 .to-do-Box {
     border-radius: 25px;
     background-color: white;
     display: flex;
     justify-content: left;
-    align-items: left;
     max-width: 70%;
     margin: auto;
     min-height: 50vh;
 
 }
 
-ul{
+ul {
     list-style-type: none;
     width: 100%;
 }
@@ -65,37 +90,81 @@ ul{
 }
 
 li {
-    flex: 1;  
+    flex: 1;
 }
 
+/** Deltete and Complete Task Buttons **/
+
 .deletebtn {
-background-color: red;
-width: 40px;
-height: 40px;
-border: red;
-border-radius: 10px;
-color: white;
-margin: 3px;
-cursor: pointer;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin: 3px;
+    cursor: pointer;
 }
 
 .complete-btn {
     background-color: rgb(122, 184, 29);
     width: 40px;
     height: 40px;
-    border: rgb(122, 184, 29);
     border-radius: 10px;
     color: white;
     margin: 3px;
     cursor: pointer;
-    }
+}
 
-    /** Remove click function from Icon **/
+/** Remove click function from Icon **/
 .fa-trash,
 .fa-check {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .completed {
     text-decoration: line-through red 2px;
+}
+
+/** Media Queries **/
+
+@media (max-width: 1024px) {
+
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .toDoInput {
+        font-size: 16px;
+        width: 60%;
+    }
+
+    #add-button {
+        font-size: 16px;
+    }
+
+    .item-div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .toDoInput {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    #add-button {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .item-div {
+        font-size: 12px;
+    }
 }
