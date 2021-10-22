@@ -1,6 +1,9 @@
 # To Do List
 To Do List is a site that hopes to increase productivity among its users. The site will be targeted towards those desks cluttered with many to do lists who would benefit from combining their lists to one location and become more organised. To Do Lists is a fully responsive JavaScript to do list that allows users to add tasks, delete tasks and mark them as complete. 
 <br>
+<br>
+<img src = "assets/images/Site on Different Devices.PNG" >" >
+
 
 ## Features
 ### <li> To Do List Logo and Heading </li>
@@ -36,6 +39,7 @@ Offer the user the ability to group certain tasks.
 Offer the user the ability to close browser and the tasks are stored for future use.
 <br>
 <br>
+
 
 ## Testing
 - HTML

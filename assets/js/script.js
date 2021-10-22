@@ -51,6 +51,7 @@ function addToDo(event) {
     deleteButton.classList.add("deletebtn");
     deleteButton.innerHTML = `<i class="fas fa-trash"></i>`;
     newItemDiv.appendChild(deleteButton);
+
 }
 
 //Function to Delete a Task
